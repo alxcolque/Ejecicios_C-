@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N,c=0;
+    int cp=0;///Contador de primos
+    int np=2;///Numeros primos
+    cout<<"Digite el valor de N: \n";
+    cin>>N;
+    while(N>cp){
+        c=0;
+        for (int i=1;i<=np;i++){
+            if(np%i==0){
+                c++;
+            }
+        }
+        if(c==2){
+            cout<<np<<" ";
+            cp++;
+        }
+        np++;
+    }
+    return 0;
+}
